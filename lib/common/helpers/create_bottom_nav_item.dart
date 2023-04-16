@@ -10,6 +10,7 @@ class CreateBottomNavItem {
   }
 }
 
+// ignore: constant_identifier_names
 enum TabItem { Home, Search, Orders, Profile }
 
 class TabItemData {

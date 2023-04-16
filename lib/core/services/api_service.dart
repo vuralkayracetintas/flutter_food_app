@@ -9,5 +9,5 @@ abstract class ApiService {
   factory ApiService(Dio dio, {String baseUrl}) = _ApiService;
 
   @GET("categories.php")
-  Future<Categories> getCategories();
+  Future<Categories?> getCategories();
 }

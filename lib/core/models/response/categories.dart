@@ -16,20 +16,18 @@ class Categories {
 
   Map<String, dynamic> toJson() {
     return <String, dynamic>{
-      'categories': categories.map((x) => x.toJson()).toList(),
+      'categories': categories.map((x) => x.toMap()).toList(),
     };
   }
 
   factory Categories.fromJson(Map<String, dynamic> map) {
     return Categories(
-        categories: List<Categorie>.from(
-            map['categories']?.map((x) => Categories.fromJson(x)))
-        // categories: List<Categorie>.from(
-        //   (map['categories'] as List<int>).map<Categorie>(
-        //     (x) => Categorie.fromMap(x as Map<String, dynamic>),
-        //   ),
-        // ),
-        );
+      categories: List<Categorie>.from(
+        (map['categories'] as List<dynamic>).map<Categorie>(
+          (x) => Categorie.fromMap(x as Map<String, dynamic>),
+        ),
+      ),
+    );
   }
 
   @override

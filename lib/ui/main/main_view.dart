@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/common/helpers/create_bottom_nav_item.dart';
-import 'package:food_app/core/di/get_it.dart';
 import 'package:food_app/ui/main/main_view_model.dart';
 import 'package:stacked/stacked.dart';
 

@@ -6,8 +6,8 @@ class ApiClient {
 
   BaseOptions options = BaseOptions(
     baseUrl: ApiConstants.BASE_URL,
-    connectTimeout: ApiConstants.CONECTION_TIMEOUT,
-    receiveTimeout: ApiConstants.RECIEVE_TIMEOUT,
+    // connectTimeout: ApiConstants.CONECTION_TIMEOUT,
+    // receiveTimeout: ApiConstants.RECIEVE_TIMEOUT,
     headers: {'Content-Type': 'application/json ; charset=utf-8'},
   );
 
