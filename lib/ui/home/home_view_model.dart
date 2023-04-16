@@ -5,8 +5,12 @@ class HomeViewModel extends AppBaseViewModel {
   List<Categorie>? categories;
   init() {
     repository.getCategories().then((value) {
-      categories = value!.categories;
+      categories = value.categories;
       notifyListeners();
     });
+  }
+
+  void getCategoryByName(String category) {
+    repository.getMealsByCategory(category).then((value) {});
   }
 }
